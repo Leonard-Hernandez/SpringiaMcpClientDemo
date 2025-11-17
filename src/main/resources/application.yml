@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: demo
+    datasource:
+        url: jdbc:mysql://${DbUrl}/SpringIa?createDatabaseIfNotExist=true
+        username: ${UserDb}
+        password: ${password}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+    
