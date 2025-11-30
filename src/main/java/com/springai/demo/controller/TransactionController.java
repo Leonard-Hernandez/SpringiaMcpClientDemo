@@ -50,7 +50,6 @@ public class TransactionController {
     }
 
     @GetMapping("/delete/{id}")
-    @Tool(description = "deleteTransaction")
     public void deleteTransaction(@PathParam("id") Long id) {
         transactionService.deleteTransaction(id);
     }

@@ -1,3 +1,7 @@
+server:
+  servlet:
+    context-path: "/demo-ai/v1"
+
 spring:
     application:
         name: demo
@@ -9,4 +13,10 @@ spring:
     jpa:
         hibernate:
             ddl-auto: update
+    ai:
+        mcp:
+            server:
+                base-url: ${server.servlet.context-path}
+                sse-endpoint: /sse
+                sse-message-endpoint: /mcp/message
     
